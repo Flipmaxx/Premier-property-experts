@@ -87,21 +87,18 @@ const Faq = () => {
     <section className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left: Image + Support Banner */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-xl shadow-lg w-full h-[300px] sm:h-[400px] lg:h-[460px]">
               <Image
-                src="/Images/1.png"
+                src="/Images/Fm1.png"
                 alt="Luxury villa with infinity pool"
                 fill
                 priority
                 className="object-cover"
               />
             </div>
-
-            {/* Support Banner */}
-            <div className="absolute left-0 right-0 -bottom-10 flex justify-center">
-              <div className="flex items-center gap-3 rounded-xl bg-teal-700 text-white px-6 py-4 shadow-md">
+            <div className="absolute bottom-0 right-0 flex justify-center">
+              <div className="flex items-center gap-3 rounded-sm bg-teal-700 text-white px-6 py-4 shadow-md">
                 <div className="shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                   <Headphones className="w-5 h-5" />
                 </div>
@@ -114,8 +111,6 @@ const Faq = () => {
               </div>
             </div>
           </div>
-
-          {/* Right: FAQ Section */}
           <div className="mt-16 lg:mt-0">
             <p className="uppercase tracking-wide text-xs font-semibold text-gray-500 mb-2">
               FAQ
@@ -145,4 +140,3 @@ const Faq = () => {
 };
 
 export default Faq;
-

@@ -4,10 +4,11 @@ import Cities from "./Components/Homepage/city"
 import Environment from "./Components/Homepage/Enviornment"
 import Faq from "./Components/Homepage/Faq"
 import Hero from "./Components/Homepage/Hero"
-import Services from "./Components/Homepage/Services"
+// import Services from "./Components/Homepage/Services"
 import Subscribe from "./Components/Homepage/Subscribe"
 import Footer from "./Components/Homepage/Footer"
-import Navbar from "./Components/Homepage/Navbar"
+
+import GetInTouch from "./Components/Homepage/Touch"
 
 
 export default function Home(){
@@ -16,8 +17,9 @@ export default function Home(){
       {/* <Navbar/> */}
       <Hero/>
       <Cities/>
-      <Services/>
+      {/* <Services/> */}
       <Environment/>
+      <GetInTouch/>
       <Faq/>
       <Blogs/>
       <Subscribe/>

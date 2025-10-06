@@ -93,30 +93,37 @@ const Environment = () => {
               </p>
             </div>
           </div>
-          <div className="border-t border-gray-200 pt-12">
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
-              {statistics.map((stat, index) => (
-                <div key={index}>
-                  <div className="mb-2">
-                    <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black">
-                      {stat.value}
-                    </span>
-                    {stat.rating && (
-                      <div className="flex justify-center items-center mt-2 space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
-                </div>
+<div className="border-t border-gray-200 pt-8 sm:pt-10 lg:pt-12">
+  <div className="grid grid-cols-5 gap-4 sm:gap-6 lg:gap-8 text-center">
+    {statistics.map((stat, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center px-1 sm:px-2"
+      >
+        <div className="mb-2 sm:mb-3">
+          <span
+            className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-gray-900 block leading-tight"
+          >
+            {stat.value}
+          </span>
+          {stat.rating && (
+            <div className="flex justify-center items-center mt-1 sm:mt-2 space-x-0.5 sm:space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="w-3 h-3 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400"
+                />
               ))}
             </div>
-          </div>
+          )}
+        </div>
+        <p className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm lg:text-base text-gray-600 leading-snug max-w-[80px] sm:max-w-[100px] lg:max-w-none">
+          {stat.label}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
         </div>
       </section>
     </main>

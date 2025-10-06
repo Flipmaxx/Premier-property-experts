@@ -93,3 +93,84 @@ h1 {
 body {
   font-family: 'Desc', sans-serif;
 }
+
+/* Services Section Custom Styles */
+.services-section {
+  font-family: 'Inter', sans-serif;
+}
+
+.services-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.services-subtitle {
+  font-weight: 400;
+  opacity: 0.8;
+  
+}
+
+.service-button {
+  transition: all 0.2s ease-in-out;
+  border-width: 1px;
+  border-color: #2D7462;
+  color: #2D7462;
+}
+
+.service-button:hover {
+  background-color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+.service-image {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive breakpoints for perfect layout */
+@media (max-width: 640px) {
+  .services-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .service-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
