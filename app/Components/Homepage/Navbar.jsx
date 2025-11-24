@@ -11,27 +11,21 @@ const links = [
   { name: 'About Us', href: '/About' },
   { name: 'Services', href: '/services', dropdown: true },
   { name: 'Projects', href: '/projects' },
-  { name: 'Contact Us', href: '/contact' },
+  { name: 'Contact Us', href: '/Contact' },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
-
-  // Add shadow when scrolled
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Prevent background scroll when mobile menu open
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
   }, [open]);
-
-  // Close mobile menu when resizing to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) setOpen(false);
@@ -40,7 +34,6 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Handle navigation click (mobile)
   const handleNavClick = (href) => {
     setOpen(false);
     router.push(href);
@@ -48,13 +41,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full sticky top-0 z-[60] transition-all duration-300 ${
+      className={`w-full sticky top-0 z-[60] transition-all duration-300 px-2 ${
         scrolled ? 'bg-white shadow-md' : 'bg-white'
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="container mx-auto ">
         <div className="flex h-20 items-center justify-between gap-6">
-          {/* Logo */}
           <div
             onClick={() => router.push('/')}
             className="flex items-center gap-3 shrink-0 cursor-pointer"
@@ -68,7 +60,6 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2 lg:gap-6">
             {links.map((link, i) => (
               <Link
@@ -89,7 +80,7 @@ const Navbar = () => {
             ))}
           </nav>
 
-          {/* Contact Info */}
+       
           <div className="hidden sm:flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-[#2D7462] text-white grid place-items-center shadow-md hover:scale-105 transition-transform duration-300">
               <Phone className="w-4 h-4" />
@@ -100,7 +91,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setOpen(!open)}
@@ -112,7 +102,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Fullscreen Mobile Menu */}
       <div
         className={`fixed inset-0 bg-white z-[70] flex flex-col items-center justify-center text-center transition-all duration-500 ease-in-out h-screen ${
           open
@@ -139,7 +128,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Mobile Nav Links */}
+  
         <nav className="flex flex-col space-y-8 w-full max-w-xs">
           {links.map((link, i) => (
             <button
@@ -156,7 +145,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Contact Info */}
         <div className="flex items-center gap-4 text-[#2D7462] mt-8">
           <div className="w-14 h-14 rounded-full bg-[#2D7462] text-white grid place-items-center shadow-md">
             <Phone className="w-6 h-6" />

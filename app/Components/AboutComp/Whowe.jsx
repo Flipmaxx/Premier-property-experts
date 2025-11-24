@@ -22,21 +22,21 @@ const Whowe = () => {
             <p className="text-xs sm:text-sm font-semibold text-gray-600 uppercase tracking-widest">
               WHO WE ARE
             </p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-gray-900 leading-snug">
               Passionate Experts Defining <br className="hidden sm:block" />
               <span className="text-[#2D7462]">Premium Living Standards.</span>
             </h1>
             <div className="space-y-4 sm:space-y-6 max-w-2xl mx-auto lg:mx-0">
               <div className="relative pl-5 sm:pl-6">
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#2D7462] rounded-full"></div>
-                <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+                <p className="text-gray-700 text-sm sm:text-sm md:text-lg leading-relaxed">
                   We bring together vision, expertise, and innovation to deliver
                   extraordinary living spaces designed for comfort and
                   sophistication.
                 </p>
               </div>
 
-              <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-sm md:text-lg leading-relaxed">
                 From residential masterpieces to commercial landmarks, our
                 projects redefine luxury and functionality. With a legacy built
                 on trust, quality, and design excellence, we continue to elevate

@@ -84,7 +84,7 @@ const Faq = () => {
   const toggle = (idx) => setOpenIndex((prev) => (prev === idx ? -1 : idx));
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full  py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div className="relative">
