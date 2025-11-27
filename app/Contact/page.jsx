@@ -1,6 +1,6 @@
 'use client'
 
-import { Main } from "next/document"
+
 import ContactLanding from "../Components/ContactComponents/ContactLanding"
 import MainContact from "../Components/ContactComponents/MainContact"
 
