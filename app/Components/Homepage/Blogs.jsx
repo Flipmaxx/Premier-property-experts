@@ -5,41 +5,65 @@ import Image from 'next/image';
 const posts = [
   {
     id: 1,
-    title: 'Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting.',
-    author: 'Erin Bun',
-    date: 'Jun, 2025',
-    image: '/Images/1.png',
-    href: '#'
+    title: "Top 5 Emerging Property Hotspots in Kochi for 2025",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://5.imimg.com/data5/SELLER/Default/2022/4/UL/HI/OT/127776968/property-dealers-500x500.jpeg",
+    href: "#"
   },
   {
     id: 2,
-    title: 'Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting.',
-    author: 'Erin Bun',
-    date: 'Jun, 2025',
-    image: '/Images/1.png',
-    href: '#'
+    title: "Why Investing in Premium Villas Is the Smartest Move Today",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    href: "#"
   },
   {
     id: 3,
-    title: 'Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting.',
-    author: 'Erin Bun',
-    date: 'Jun, 2025',
-    image: '/Images/1.png',
-    href: '#'
+    title: "A Buyer’s Guide: What to Check Before Purchasing a New Apartment",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80",
+    href: "#"
+  },
+  {
+    id: 4,
+    title: "Real Estate Market Trends in Kerala: What to Expect in 2025",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
+    href: "#"
+  },
+  {
+    id: 5,
+    title: "How Premier Property Xperts Ensures Safe & Transparent Property Deals",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80",
+    href: "#"
+  },
+  {
+    id: 6,
+    title: "Top Mistakes First-Time Home Buyers Make & How to Avoid Them",
+    author: "Premier Property Xperts",
+    date: "Jan, 2025",
+    image: "https://media.istockphoto.com/id/1498811925/photo/real-estate-agent-or-real-estate-agent-was-holding-the-key-to-the-new-landlord-tenant-or.jpg?s=612x612&w=0&k=20&c=DYZP5A7Cmv7jZZGq-pza6y-HJDK5RN0hN62RS8ILHIs=",
+    href: "#"
   }
 ];
+
 
 const BlogCard = ({ post }) => {
   return (
     <article className="group rounded-2xl overflow-hidden bg-white">
       <div className="relative w-full h-48 sm:h-56 lg:h-60 overflow-hidden rounded-xl">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+       <img
+  src={post.image}
+  alt={post.title}
+  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+/>
+
       </div>
       <div className="pt-3">
         <div className="flex items-center gap-2 text-xs text-gray-500">
@@ -68,8 +92,8 @@ const Blogs = () => {
             Your Gateway To Exceptional Properties
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-gray-600">
-            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the 1500.
+         Property management ensures that your residential or commercial
+          property is maintained, rented, and handled with complete care.
           </p>
         </div>
 

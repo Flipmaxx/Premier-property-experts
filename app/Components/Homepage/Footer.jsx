@@ -10,8 +10,7 @@ const Footer = () => {
           <div>
             <img src="./Images/2.png" alt="" className='w-1/2 h-20'/>
             <p className="text-sm text-white/80 leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown.
+              At Premium Property Experts, we provide comprehensive real estate solutions tailored to meet your unique needs and investment goals.
             </p>
             <div className="mt-6 flex items-center gap-4">
               <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white text-[#0E2A1F] grid place-items-center hover:bg-teal-400 hover:text-white transition">
@@ -49,8 +48,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
             <ul className="space-y-4 text-white/90 text-sm">
-              <li className="flex items-center gap-3"><Phone className="w-4 h-4" /> +91 0000000000</li>
-              <li className="flex items-center gap-3"><Mail className="w-4 h-4" /> premiumproperty@gmail.com</li>
+              <li className="flex items-center gap-3"><Phone className="w-4 h-4" /> +91  8590208940</li>
+              <li className="flex items-center gap-3"><Mail className="w-4 h-4" /> premierpropertyxperts@gmail.com</li>
               <li className="flex items-center gap-3"><MapPin className="w-4 h-4" /> Mangalassery Tower, Eloor Rd, Opposite Ganapathy Temple</li>
             </ul>
           </div>

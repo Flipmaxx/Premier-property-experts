@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import ServicesSlider from './ServicesCard'
+import ServicesSlider from '../Components/Homepage/ServicesCard'
 
 export default function Servicess() {
   const serviceButtons = [
@@ -26,10 +26,8 @@ export default function Servicess() {
   ]
 
   return (
-  <div>
-  
-  <ServicesSlider/>
     <div className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 services-section">
+      <ServicesSlider/>
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-12 sm:mb-16">
@@ -85,7 +83,6 @@ export default function Servicess() {
           ))}
         </div>
       </div>
-    </div>
     </div>
   )
 }

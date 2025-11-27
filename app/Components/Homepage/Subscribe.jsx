@@ -27,9 +27,7 @@ const Subscribe = () => {
                   Success
                 </h3>
                 <p className="mt-4 text-sm sm:text-base text-gray-600 max-w-xl">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text for decades.
+                  We take pride in delivering transparent, efficient, and high-quality services, designed to help property owners maximize returns and maintain peace of mind.
                 </p>
               </div>
 

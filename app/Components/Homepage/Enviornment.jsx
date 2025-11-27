@@ -5,9 +5,9 @@ import { Star } from "lucide-react";
 
 const Environment = () => {
   const images = [
-    { id: 1, src: "/Images/C1.png", alt: "Professional cleaning team cleaning sofa" },
-    { id: 2, src: "/Images/C2.png", alt: "Professional cleaner dusting ceiling fan" },
-    { id: 3, src: "/Images/C3.png", alt: "Professional cleaner mopping floor" },
+    { id: 1, src: "https://admin.netlawman.com/uploads/article/original/types-house-buyers-and-dealing-with-offers_230224042239.webp", alt: "Professional cleaning team cleaning sofa" },
+    { id: 2, src: "https://www.fincart.com/wp-content/uploads/2025/05/top-view-business-people-working-with-ipad_23-2150103556.webp", alt: "Professional cleaner dusting ceiling fan" },
+    { id: 3, src: "https://www.prestigegroupuk.com/upload/iblock/a49/rllqo8cvanuzbwlostirk9ueuc1vl3uw.jpg", alt: "Professional cleaner mopping floor" },
     { id: 4, src: "/Images/C4.png", alt: "Professional cleaner dusting ceiling fan" },
     { id: 5, src: "/Images/C5.png", alt: "Professional cleaning team in office" }
   ];
@@ -51,13 +51,14 @@ const Environment = () => {
               <div className="grid grid-cols-3 gap-6 mb-6">
                 {images.slice(0, 3).map((image) => (
                   <div key={image.id} className="relative group overflow-hidden rounded-lg shadow-md">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
-                    />
+          <img
+  src={image.src}
+  alt={image.alt}
+  width={600}
+  height={400}
+  className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+/>
+
                    
                   </div>
                 ))}

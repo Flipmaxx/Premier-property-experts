@@ -15,9 +15,7 @@ export default function MainContact() {
             We Value Your Queries And Feedback
           </h2>
           <p className="text-gray-600 mb-10">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+         At Premium Property Experts, we specialize in creating seamless real estate experiences — from buying and selling to property management and investment consulting
           </p>
 
           <div className="space-y-5">
@@ -29,7 +27,9 @@ export default function MainContact() {
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Address</h4>
                 <p className="text-gray-600 text-sm">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 
+Mangalassery Tower, Eloor Rd, opposite Ganapathy Temple, North Kalamassery,
+Kochi, Kerala 683104
                 </p>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function MainContact() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Mobile</h4>
-                <p className="text-gray-600 text-sm">+91 0000000000</p>
+                <p className="text-gray-600 text-sm">+91 8590208940</p>
               </div>
             </div>
 
@@ -52,7 +52,7 @@ export default function MainContact() {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                <p className="text-gray-600 text-sm">premm@gmail.com</p>
+                <p className="text-gray-600 text-sm">premierpropertyexperts@gmail.com</p>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function MainContact() {
         <div className="bg-white shadow-xl rounded-2xl p-8 border border-gray-100">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Get In Touch</h3>
           <p className="text-gray-600 mb-6 text-sm">
-            Lorem Ipsum is simply dummy text of the printing.
+          At Premium Property Experts, we specialize in creating seamless real estate experiences 
           </p>
 
           <form className="space-y-4">

@@ -100,8 +100,8 @@ export default function Hero() {
 
          
           <div className="flex gap-3 justify-between md:justify-start">
-            <button className="p-2 rounded-full text-gray-600 bg-blue-100  transition">
-              <img src="./Images/F1.png" alt="filter 1" className="w-8 h-7" />
+            <button className="p-3 rounded-full text-gray-600 bg-blue-100  transition">
+              <img src="./Images/F1.png" alt="filter 1" className="w-7 h-7" />
             </button>
 
             <button className="p-2 rounded-full text-gray-600 bg-blue-100  transition">

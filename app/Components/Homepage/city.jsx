@@ -73,7 +73,7 @@ export default function AboutUs() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm">Contact Us</h4>
-                  <p className="text-xs text-gray-600">+91 0000000000</p>
+                  <p className="text-xs text-gray-600">+91 8590208940</p>
                 </div>
               </div>
             </div>
