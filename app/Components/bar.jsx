@@ -63,7 +63,7 @@ export default function FeaturesAndStats() {
       </div>
 
     {/* Stats Section */}
-<div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 md:gap-6 lg:gap-8 text-center text-white mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-3 sm:px-5 lg:px-6">
+<div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 shadow-3xl gap-3 sm:gap-5 md:gap-6 lg:gap-8 text-center text-white mt-12 sm:mt-16 md:mt-20 lg:mt-24 px-3 sm:px-5 lg:px-6">
 
   {/* Stat 1 */}
   <div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl hover:bg-white/10 transition-all duration-300 group cursor-pointer border border-transparent hover:border-white/20">
